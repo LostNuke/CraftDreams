@@ -1,0 +1,175 @@
+body {
+	background-image: url("/img/ELb86Z3.png");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
+@keyframes btt_fadein{
+	0%	{opacity: 0; margin-top: 90pt;}
+	100%	{opacity: 1;}
+}
+
+@keyframes ltr_fadein{
+	0%	{opacity: 0; margin-left: 100pt;}
+	60%	{opacity: 0; margin-left: 100pt;}
+	100%	{opacity: 1;}
+}
+
+@keyframes rtl_fadein{
+	0%	{opacity: 0; float: left;  margin-left: 200pt;}
+	60%	{opacity: 0; float: left; margin-left: 200pt;}
+	100%	{opacity: 1;}
+}
+
+#header {
+	background-color: rgba(249, 110, 91, 0.9);
+	color: white;
+	
+	margin-left: 10%;
+	
+	height: 100pt;
+	width: 80%;
+	
+	display: flex;
+	
+	align-items: center;
+  	justify-content: center;
+  	
+  	animation: 2s btt_fadein;
+  	
+  	border-radius: 5pt;
+}
+
+.quadrat {
+	vertical-align: middle;
+	
+	align-items: center;
+  	justify-content: center;
+	
+	font-size: 30pt;
+	
+	display: flex;
+	
+	color: white;
+	opacity: 0.5;
+	border-radius: 5pt;
+}
+
+.button {
+	text-decoration: none;
+	vertical-align: middle;
+	font-family: 'Comic Sans MS';
+	
+	font-size: 30pt;
+	
+	align-items: center;
+  	justify-content: center;
+	
+	color: white;
+	
+	margin-left: 30pt;
+	margin-right: 30pt;
+	
+	margin-top: -10pt;
+	
+	display: flex;
+	border-radius: 5pt;
+}
+
+.button:hover {
+	color: #2c2c2c;
+	transition-duration:0.5s;
+}
+
+#btn_start {
+	border-bottom: 1.3pt groove #000000;
+}
+
+
+
+#content {
+	width: 80%;
+	margin-left: 10%;
+	
+	margin-top: 5pt;
+	min-height: 400pt;
+	
+	background-color: rgba(0, 0, 0, 0.8);
+	
+	animation: 4s rtl_fadein;
+	border-radius: 5pt;
+}
+
+
+
+
+#footer {
+	width: 80%;
+	margin-left: 10%;
+	
+	margin-top: 5pt;
+	min-height: 170pt;
+	
+	background-color: rgba(20, 20, 30, 0.985);
+	
+	animation: 6s ltr_fadein;
+	border-radius: 5pt;
+}
+
+.footer-item {
+	padding: 30pt;
+}
+
+#credit {
+	float: right;
+	color: white;
+	
+	padding-top: 100pt;
+	padding-right: 20pt;
+	
+	text-decoration: none;
+	font-family: 'Comic Sans MS';
+}
+
+#footer-icons {
+	width: 50pt;
+	height: 50pt;
+	
+}
+
+#footer-icon-list {
+	list-style-type: none;
+	
+	text-align: center;
+	
+}
+
+#footer-list {
+	display: inline-block;
+	
+	padding: 10pt;
+	align-items: center;
+}
+
+#footer-items-list {
+	list-style-type: none;
+	color: white;
+	
+	text-align: center;
+	
+	font-family: 'Comic Sans MS';
+	font-size: 13pt;
+	
+}
+
+#footer-item {
+	text-indent: 1pt;
+}
+
+.credit {
+	display: inline-block;
+}
+
+#footer-items {
+	margin: 1pt;
+}
