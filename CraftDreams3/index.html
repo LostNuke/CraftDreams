@@ -7,12 +7,11 @@
 		<link rel="stylesheet" href="CSS/default.css"/>
 		<link rel="stylesheet" href="CSS/startseite.css"/>
 		
-		<script type="text/javascript" src="script/js/JQuery.js"></script>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript" src="script/js/PageApi.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$.loadPage("#content", "page/startseite/index.php", "Startseite");
-				//So isses
 			});
 		</script>
 	</head>
@@ -33,16 +32,15 @@
 		<div id="content"><!-- page (javascript) --></div>
 		<div id="footer">
 			 <ul id="footer-icon-list">
-  				<li class="footer-list"><img src="img/FooterIcons/teamspeak.png" id="footer-icons"></li>
-  				<li class="footer-list"><img src="img/FooterIcons/discord.png" id="footer-icons"></li>
-  				<li class="footer-list"><img src="img/FooterIcons/impressum.png" id="footer-icons"></li>
-  				<li class="footer-list"><img src="img/FooterIcons/Twitter.png" id="footer-icons"></li>
-  				<li class="footer-list"><img src="img/FooterIcons/bewerbung.png" id="footer-icons"></li>
+  				<li id="footer-list"><img src="img/FooterIcons/teamspeak.png" id="footer-icons"></li>
+  				<li id="footer-list"><img src="img/FooterIcons/discord.png" id="footer-icons"></li>
+  				<li id="footer-list"><img src="img/FooterIcons/impressum.png" id="footer-icons"></li>
+  				<li id="footer-list"><img src="img/FooterIcons/Twitter.png" id="footer-icons"></li>
 			 </ul>
 			 <ul id="footer-items-list">
-			 	<li class=footer-item>
-			 		<p class="footer-items">Copyright &copy; 2018 CraftDreams.de</p>
-			 		<p class="footer-items" class="credit">Webdesign + Programmierung: </p> <a href="https://discord.gg/mAWFQs6" class="credit">PolygonDev</a>
+			 	<li id=footer-item>
+			 		<p id="footer-items">Copyright &copy; 2018 CraftDreams.de</p>
+			 		<p id="footer-items" class="credit">Webdesign + Programmierung: </p> <a href="https://discord.gg/mAWFQs6" class="credit">PolygonDev</a>
 			 			
 			 	</li>
 			 	<li id=footer-item></li>
