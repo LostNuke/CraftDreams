@@ -18,11 +18,18 @@ $.startSlider = function() {
 	                }
 	            } 
 	        });
-			alert(images);
 			images = images.split('|');
 			$("#images").css("background-image", "url(" + images[0] + ")");
 		}
 	});
+	
+	$.timedslide();
+}
+
+$.timedslide = function () {
+	setInterval(function() {
+	    $.diaforward();
+	}, 10000);
 }
 
 $.diaback = function() {
@@ -31,7 +38,14 @@ $.diaback = function() {
 	} else {
 		index = images.length -1;
 	}
-	$("#images").animate("background-image", "url(" + images[index] + ")");
+	$("#images").animate({"background-position-x":"1000pt"}, function() {
+		$("#images").css("background-image", "url(" + images[index] + ")");
+		$("#images").css("background-position-x", "-1000pt");
+		$("#images").animate({"background-position-x":"0pt"});
+	});
+	
+	
+	
 }
 
 $.diaforward = function() {
@@ -40,6 +54,10 @@ $.diaforward = function() {
 	} else {
 		index = 0;
 	}
-	$("#images").animate("background-image", "url(" + images[index] + ")");
+	$("#images").animate({"background-position-x":"-1000pt"}, function() {
+		$("#images").css("background-image", "url(" + images[index] + ")");
+		$("#images").css("background-position-x", "1000pt");
+		$("#images").animate({"background-position-x":"0pt"});
+	});
 }
 
