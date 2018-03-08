@@ -17,7 +17,7 @@ body {
 #header {
 	display: flex;
 	
-	background-color: rgba(249, 110, 91, 0.9);
+	background-color: rgba(157, 0, 0, 0.9);
  	
  	min-width: 700pt;
  	width: 80%;
@@ -168,6 +168,9 @@ body {
 
 #footer-item {
 	text-indent: 1pt;
+	font-size: 17.5pt;
+	
+	margin-top: -10pt;
 }
 
 .credit {
