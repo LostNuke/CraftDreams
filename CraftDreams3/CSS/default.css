@@ -6,6 +6,7 @@ body {
     background-size: 100% 100%;
     
     display: none;
+    
 }
 
 @keyframes btt_fadein{
@@ -21,6 +22,7 @@ body {
  	min-width: 700pt;
  	width: 80%;
  	height: 100pt;
+ 	max-width: 2000pt;
  	
  	margin-right: auto;
  	margin-left: auto;
@@ -80,18 +82,21 @@ body {
 
 
 #content {
+	max-width: 2000pt;
 	min-width: 700pt;
 	width: 80%;
+	
+	min-height: 400pt;
+	height: auto;
 	
  	margin-right: auto;
  	margin-left: auto;
 	
 	margin-top: 12pt;
-	min-height: 400pt;
 	
 	background-color: rgba(0, 0, 0, 0.8);
 	
-	animation: 2s btt_fadein;
+	animation: 3s btt_fadein;
 	border-radius: 5pt;
 }
 
@@ -107,10 +112,11 @@ body {
 	
 	margin-top: 5pt;
 	min-height: 170pt;
+	max-width: 2000pt;
 	
 	background-color: rgba(20, 20, 30, 0.985);
 	
-	animation: 3s btt_fadein;
+	animation: 4s btt_fadein;
 	border-radius: 5pt;
 }
 

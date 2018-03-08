@@ -1,32 +1,61 @@
-#startseite {
+#startseite #diashow {
+	align-items: center;
+ 	justify-content: center;
+ 	
+	display: flex;
+	
+	height: 400pt;
+	width: 690pt;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#startseite #images {
+	height: 317pt;
+	width: 600pt;
+	
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: black;
+	
+	border: 3px solid white;
+}
+
+#startseite .backfront {
+	display: flex;
+	
+	height: 350pt;
+	
+	text-align: center;
+}
+
+#startseite h1 {
+	display: flex;
+	
+	font-size: 100pt;
+	color: white;
+	
+	text-align: center;
+	
+	align-items: center;
+ 	justify-content: center;
+	
+	border: 3px solid white;
+}
+
+#startseite a {
+	display: flex;
+	
+	text-decoration: none;
 	color: white;
 }
 
-@keyframes slideanimation {
-	from { left:-500px; opacity:0 } 
-	to { left:0; opacity:1 }
+#startseite #back {
+	display: flex;
 }
 
-.slides {
-	animation: slideanimation 0.8s:
-}
-
-#pic1 {
-	background-color: green;
-}
-
-#pic2 {
-	background-color: yellow;
-}
-
-#pic3 {
-	background-color: red;	
-}
-
-#pic4 {
-	background-color: blue;
-}
-
-#pic5 {
-	background-color: purple;
+#startseite #forward {
+	display: flex;
 }
