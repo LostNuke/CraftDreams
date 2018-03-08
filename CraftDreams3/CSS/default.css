@@ -4,6 +4,8 @@ body {
 	background-attachment:fixed;
 	background-position: 0 0;
     background-size: 100% 100%;
+    
+    display: none;
 }
 
 @keyframes btt_fadein{
@@ -11,30 +13,18 @@ body {
 	100%	{opacity: 1;}
 }
 
-@keyframes ltr_fadein{
-	0%	{opacity: 0; margin-left: 100pt;}
-	60%	{opacity: 0; margin-left: 100pt;}
-	100%	{opacity: 1;}
-}
-
-@keyframes rtl_fadein{
-	0%	{opacity: 0; float: left;  margin-left: 200pt;}
-	60%	{opacity: 0; float: left; margin-left: 200pt;}
-	100%	{opacity: 1;}
-}
-
 #header {
-	background-color: rgba(249, 110, 91, 0.9);
-	color: white;
-	
-	margin-left: 10%;
-	
-	height: 100pt;
-	width: 80%;
-	
 	display: flex;
 	
-	align-items: center;
+	background-color: rgba(249, 110, 91, 0.9);
+ 	
+ 	min-width: 700pt;
+ 	width: 80%;
+ 	height: 100pt;
+ 	
+ 	margin-right: auto;
+ 	margin-left: auto;
+	
   	justify-content: center;
   	
   	animation: 1s btt_fadein;
@@ -58,19 +48,19 @@ body {
 }
 
 .button {
+	display: block;
 	text-decoration: none;
 	vertical-align: middle;
 	font-family: 'Comic Sans MS';
 	
+	margin-left: 20pt;
+	margin-right: 20pt;
 	font-size: 30pt;
 	
 	align-items: center;
   	justify-content: center;
 	
 	color: white;
-	
-	margin-left: 30pt;
-	margin-right: 30pt;
 	
 	margin-top: -10pt;
 	
@@ -90,15 +80,18 @@ body {
 
 
 #content {
+	min-width: 700pt;
 	width: 80%;
-	margin-left: 10%;
+	
+ 	margin-right: auto;
+ 	margin-left: auto;
 	
 	margin-top: 12pt;
 	min-height: 400pt;
 	
 	background-color: rgba(0, 0, 0, 0.8);
 	
-	animation: 2s rtl_fadein;
+	animation: 2s btt_fadein;
 	border-radius: 5pt;
 }
 
@@ -106,15 +99,18 @@ body {
 
 
 #footer {
+	min-width: 700pt;
 	width: 80%;
-	margin-left: 10%;
+	
+	margin-right: auto;
+ 	margin-left: auto;
 	
 	margin-top: 5pt;
 	min-height: 170pt;
 	
 	background-color: rgba(20, 20, 30, 0.985);
 	
-	animation: 3s ltr_fadein;
+	animation: 3s btt_fadein;
 	border-radius: 5pt;
 }
 

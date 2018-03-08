@@ -24,8 +24,70 @@
 	});
 </script>
 
+<style>
+	
+	#diashow {
+		display: flex;
+		
+		height: 354pt;
+		width: 690pt;
+		
+		padding-top: 20pt;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#images {
+		width: 100%;
+		height: 100%;
+		
+		
+		border: 3px solid white;
+	}
+	
+	.backfront {
+		display: flex;
+		
+		height: 350pt;
+		
+		text-align: center;
+	}
+	
+	h1 {
+		display: flex;
+		
+		font-size: 100pt;
+		color: white;
+		
+		text-align: center;
+		
+		align-items: center;
+  		justify-content: center;
+		
+		border: 3px solid white;
+	}
+	
+	a {
+		display: flex;
+		
+		text-decoration: none;
+		color: white;
+	}
+	
+	#back {
+		display: flex;
+	}
+	
+	#forward {
+		display: flex;
+	}
+	
+</style>
+
 <div id="startseite">
 	<div id="diashow">
-		<h1><a href="javascript:diaback();">&lt;</a></h1>
+		<div id="back" class="backfront"><h1><a href="javascript:diaback();">&lt;</a></h1></div>
+		<div id="images"></div>
+		<div id="forward" class="backfront"><h1><a href="javascript:diaforward();">&gt;</a></h1></div>
 	</div>
 </div>
