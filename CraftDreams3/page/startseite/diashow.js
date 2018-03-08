@@ -3,8 +3,9 @@ var index = 0;
 
 $.startSlider = function() {
 	
-	var folder = "../../img/diashow/";
-	
+	var folder = "../../img/diashow/"
+	var bacgrounds = 0;
+		
 	$.ajax({
 		url : folder,
 		success: function (data) {
@@ -18,7 +19,18 @@ $.startSlider = function() {
 	                }
 	            } 
 	        });
+			
 			images = images.split('|');
+			
+//			for (var i = 0; i < (images.length); i++) {
+//				if (i == 0) {
+//					backgrounds = "url(" + images[i] + ")";
+//				} else {
+//					backgrounds += ", url(" + images[i] + ")";
+//				}
+//			}
+//			
+//			$("#images").css("background-image", backgrounds);
 			$("#images").css("background-image", "url(" + images[0] + ")");
 		}
 	});
@@ -38,14 +50,12 @@ $.diaback = function() {
 	} else {
 		index = images.length -1;
 	}
+	
 	$("#images").animate({"background-position-x":"1000pt"}, function() {
 		$("#images").css("background-image", "url(" + images[index] + ")");
 		$("#images").css("background-position-x", "-1000pt");
 		$("#images").animate({"background-position-x":"0pt"});
 	});
-	
-	
-	
 }
 
 $.diaforward = function() {
@@ -54,6 +64,7 @@ $.diaforward = function() {
 	} else {
 		index = 0;
 	}
+	
 	$("#images").animate({"background-position-x":"-1000pt"}, function() {
 		$("#images").css("background-image", "url(" + images[index] + ")");
 		$("#images").css("background-position-x", "1000pt");
