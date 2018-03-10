@@ -1,7 +1,7 @@
 #startseite h1 {
 	display: flex;
 	
-	font-family: 'Comic Sans MS';
+	font-family: 'Source Sans Pro';
 	font-size: 40pt;
 	color: white;
 }
@@ -9,7 +9,7 @@
 #startseite h2 {
 	display: flex;
 	
-	font-family: 'Comic Sans MS';
+	font-family: 'Source Sans Pro';
 	font-size: 34pt;
 	color: white;
 }

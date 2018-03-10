@@ -1,3 +1,32 @@
+#serverteam {
+	padding-top: 50pt;
+	padding-bottom: 50pt;
+}
+
+#serverteam #admin-header {
+	color: red;
+}
+
+#serverteam #dev-header {
+	
+}
+
+#serverteam #mod-header {
+	color: #ED5466;
+}
+
+#serverteam #sup-header {
+	color: #5959ff;
+}
+
+#serverteam #builder-header {
+	color: navy;
+}
+
+#serverteam #designer-header {
+	
+}
+
 #serverteam #btn_start {
 	border-bottom: 0pt groove #000000;
 }
@@ -7,7 +36,7 @@
 }
 
 #serverteam .title {
-	font-family: 'Comic Sans MS';
+	font-family: 'Source Sans Pro';
 	font-size: 40pt;
 	color: white;
 	
@@ -15,17 +44,18 @@
 	
 	margin: 0px;
 	padding: 0px;
-	
 }
 
 
 
 #serverteam .st-ul {
+	border-top: medium solid white;
+	
 	list-style-type: none;
 	
 	text-align: center;
 	
-	padding-top: 10pt;
+	padding-bottom: 50pt;
 }
 
 #serverteam .st-list {
@@ -37,7 +67,8 @@
 
 #serverteam .st-icons {
 	border-radius: 10pt;
-	
+	width: 100pt;
+	height: 100pt;
 }
 
 #serverteam .text-hover {

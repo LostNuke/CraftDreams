@@ -16,6 +16,7 @@ body {
 
 #header {
 	display: flex;
+	display: -webkit-flex;
 	
 	background-color: rgba(157, 0, 0, 0.9);
  	
@@ -28,6 +29,7 @@ body {
  	margin-left: auto;
 	
   	justify-content: center;
+  	-webkit-justify-content: center;
   	
   	animation: 1s btt_fadein;
   	
@@ -53,7 +55,7 @@ body {
 	display: block;
 	text-decoration: none;
 	vertical-align: middle;
-	font-family: 'Comic Sans MS';
+	font-family: 'Source Sans Pro';
 	
 	margin-left: 20pt;
 	margin-right: 20pt;
@@ -132,7 +134,7 @@ body {
 	padding-right: 20pt;
 	
 	text-decoration: none;
-	font-family: 'Comic Sans MS';
+	font-family: 'Source Sans Pro';
 }
 
 #footer-icons {
@@ -161,14 +163,14 @@ body {
 	
 	text-align: center;
 	
-	font-family: 'Comic Sans MS';
-	font-size: 13pt;
+	font-family: 'Source Sans Pro';
+	font-size: 20pt;
 	
 }
 
 #footer-item {
 	text-indent: 1pt;
-	font-size: 17.5pt;
+	font-size: 20pt;
 	
 	margin-top: -10pt;
 }
