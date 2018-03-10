@@ -3,13 +3,11 @@ var index = 0;
 var interval;
 var imgdiv;
 var adiv;
+var folder = "../../img/diashow/";
 
-$.startSlider = function() {
-	
-	var folder = "../../img/diashow/";
+$loadSliderComponents = function() {
 	imgdiv = $("#startseite #images");
 	adiv = $("#startseite a");
-	
 	
 	imgdiv.mouseover(function() {
 		adiv.css("display", "flex");
@@ -35,11 +33,19 @@ $.startSlider = function() {
 			togglesliders = false;
 		}
 	});
+}
+
+$.startSlider = function() {
+	clearInterval(interval);
+	
+	images = 0;
+	index = 0;
+	
+	$loadSliderComponents();
 	
 	$.ajax({
-		url : folder,
+		url: folder,
 		success: function (data) {
-			
 			$(data).find("a").attr("href", function (i, val) {
 	            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
 	                if (images == 0) {
@@ -53,10 +59,13 @@ $.startSlider = function() {
 			images = images.split('|');
 			
 			imgdiv.css("background-image", "url(" + images[0] + ")");
+			
+			$.timedslide();
+		},
+		error: function() {
+			alert("ERROR 1004 - Contact Server Administrator");
 		}
 	});
-	
-	$.timedslide();
 }
 
 $.timedslide = function () {
