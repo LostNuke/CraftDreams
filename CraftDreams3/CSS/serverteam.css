@@ -1,12 +1,12 @@
-#btn_start {
+#serverteam #btn_start {
 	border-bottom: 0pt groove #000000;
 }
 
-#btn_serverteam {
+#serverteam #btn_serverteam {
 	border-bottom: 1.3pt groove #000000;
 }
 
-.title {
+#serverteam .title {
 	font-family: 'Comic Sans MS';
 	font-size: 40pt;
 	color: white;
@@ -20,7 +20,7 @@
 
 
 
-.st-ul {
+#serverteam .st-ul {
 	list-style-type: none;
 	
 	text-align: center;
@@ -28,19 +28,19 @@
 	padding-top: 10pt;
 }
 
-.st-list {
+#serverteam .st-list {
 	display: inline-block;
 	
 	padding: 10pt;
 	
 }
 
-.st-icons {
+#serverteam .st-icons {
 	border-radius: 10pt;
 	
 }
 
-.text-hover {
+#serverteam .text-hover {
 	visibility: hidden;
     width: 120px;
     background-color: black;
@@ -53,7 +53,7 @@
     z-index: 1;
 }
 
-#admin-list:hover #admin-hover1 {
+#serverteam #admin-list:hover #admin-hover1 {
 	visibility: visible;
 }
 
