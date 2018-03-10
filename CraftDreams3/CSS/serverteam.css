@@ -1,0 +1,60 @@
+#btn_start {
+	border-bottom: 0pt groove #000000;
+}
+
+#btn_serverteam {
+	border-bottom: 1.3pt groove #000000;
+}
+
+.title {
+	font-family: 'Comic Sans MS';
+	font-size: 40pt;
+	color: white;
+	
+	text-align: center;
+	
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+
+
+.st-ul {
+	list-style-type: none;
+	
+	text-align: center;
+	
+	padding-top: 10pt;
+}
+
+.st-list {
+	display: inline-block;
+	
+	padding: 10pt;
+	
+}
+
+.st-icons {
+	border-radius: 10pt;
+	
+}
+
+.text-hover {
+	visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+#admin-list:hover #admin-hover1 {
+	visibility: visible;
+}
+
+

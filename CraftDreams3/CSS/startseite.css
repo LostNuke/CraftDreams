@@ -1,124 +1,32 @@
-#startseite h1 {
-	display: flex;
-	
-	font-family: 'Comic Sans MS';
-	font-size: 40pt;
+#startseite {
 	color: white;
 }
 
-#startseite h2 {
-	display: flex;
-	
-	font-family: 'Comic Sans MS';
-	font-size: 34pt;
-	color: white;
+@keyframes slideanimation {
+	from { left:-500px; opacity:0 } 
+	to { left:0; opacity:1 }
 }
 
-#startseite hr {
-	border-width: 2pt;
+.slides {
+	animation: slideanimation 0.8s:
 }
 
-#startseite #cd {
-	lign-items: center;
- 	justify-content: center;
- 	
- 	font-size: 13.5pt;
-	padding-left: 400pt;
-	
-	margin-top: -13.5pt;
+#pic1 {
+	background-color: green;
 }
 
-#startseite #us {
-	margin-top: auto;
-	
-	text-decoration: underline;
-	
-	font-size: 20pt;
-	padding-left: 400pt;
-	
-	margin-top: -30pt;
-	
-	align-items: center;
- 	justify-content: center;
+#pic2 {
+	background-color: yellow;
 }
 
-#startseite #twitter {
-	display: flex;
-	
-	width: 680pt;
-	height: auto;
-	
-	margin-top: 50pt;
-	
-	margin-left: auto;
-	margin-right: auto;
-	
-	align-items: center;
- 	justify-content: center;
+#pic3 {
+	background-color: red;	
 }
 
-#startseite #diashow {
-	display: flex;
-		
-	align-items: center;
- 	justify-content: center;
-	
-	height: 400pt;
-	width: 690pt;
-	
-	padding-top: 50pt;
-	
-	margin-left: auto;
-	margin-right: auto;
+#pic4 {
+	background-color: blue;
 }
 
-#startseite #images {
-	height: 317pt;
-	width: 560pt;
-	
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	background-color: black;
-	
-	border: 3px solid white;
-}
-
-#startseite a {
-	display: none;
-	
-	height: 350pt;
-	text-align: center;
-	
-	text-decoration: none;
-	color: white;
-	
-	margin-top: auto;
-	margin-bottom: auto;
-	
-	height: 30%;
-	
-	font-size: 50pt;
-	
-	text-align: center;
-	
-	align-items: center;
- 	justify-content: center;
-	
-	border-radius: 30pt;
-	border: 3px solid white;
-}
-
-#startseite #back {
-	display: none;
-	
-	z-index: 3;
-	
-	margin-right: -40pt;
-}
-
-#startseite #forward {
-	display: none;
-	
-	margin-left: -40pt;
+#pic5 {
+	background-color: purple;
 }

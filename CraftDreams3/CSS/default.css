@@ -1,12 +1,7 @@
 body {
-	background-image: url("/img/background.jpg");
+	background-image: url("/img/ELb86Z3.png");
 	background-repeat: no-repeat;
 	background-attachment:fixed;
-	background-position: 0 0;
-    background-size: 100% 100%;
-    
-    display: none;
-    
 }
 
 @keyframes btt_fadein{
@@ -14,22 +9,33 @@ body {
 	100%	{opacity: 1;}
 }
 
+@keyframes ltr_fadein{
+	0%	{opacity: 0; margin-left: 100pt;}
+	60%	{opacity: 0; margin-left: 100pt;}
+	100%	{opacity: 1;}
+}
+
+@keyframes rtl_fadein{
+	0%	{opacity: 0; float: left;  margin-left: 200pt;}
+	60%	{opacity: 0; float: left; margin-left: 200pt;}
+	100%	{opacity: 1;}
+}
+
 #header {
+	background-color: rgba(249, 110, 91, 0.9);
+	color: white;
+	
+	margin-left: 10%;
+	
+	height: 100pt;
+	width: 80%;
+	
 	display: flex;
 	
-	background-color: rgba(157, 0, 0, 0.9);
- 	
- 	min-width: 700pt;
- 	width: 80%;
- 	height: 100pt;
- 	max-width: 2000pt;
- 	
- 	margin-right: auto;
- 	margin-left: auto;
-	
+	align-items: center;
   	justify-content: center;
   	
-  	animation: 1s btt_fadein;
+  	animation: 2s btt_fadein;
   	
   	border-radius: 5pt;
 }
@@ -50,19 +56,19 @@ body {
 }
 
 .button {
-	display: block;
 	text-decoration: none;
 	vertical-align: middle;
 	font-family: 'Comic Sans MS';
 	
-	margin-left: 20pt;
-	margin-right: 20pt;
 	font-size: 30pt;
 	
 	align-items: center;
   	justify-content: center;
 	
 	color: white;
+	
+	margin-left: 30pt;
+	margin-right: 30pt;
 	
 	margin-top: -10pt;
 	
@@ -82,21 +88,15 @@ body {
 
 
 #content {
-	max-width: 2000pt;
-	min-width: 700pt;
 	width: 80%;
+	margin-left: 10%;
 	
+	margin-top: 5pt;
 	min-height: 400pt;
-	height: auto;
-	
- 	margin-right: auto;
- 	margin-left: auto;
-	
-	margin-top: 12pt;
 	
 	background-color: rgba(0, 0, 0, 0.8);
 	
-	animation: 3s btt_fadein;
+	animation: 4s rtl_fadein;
 	border-radius: 5pt;
 }
 
@@ -104,19 +104,15 @@ body {
 
 
 #footer {
-	min-width: 700pt;
 	width: 80%;
-	
-	margin-right: auto;
- 	margin-left: auto;
+	margin-left: 10%;
 	
 	margin-top: 5pt;
 	min-height: 170pt;
-	max-width: 2000pt;
 	
 	background-color: rgba(20, 20, 30, 0.985);
 	
-	animation: 4s btt_fadein;
+	animation: 6s ltr_fadein;
 	border-radius: 5pt;
 }
 
@@ -167,10 +163,7 @@ body {
 }
 
 #footer-item {
-	text-indent: 1pt;
-	font-size: 17.5pt;
-	
-	margin-top: -10pt;
+	text-indent: 0pt;
 }
 
 .credit {
