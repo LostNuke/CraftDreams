@@ -182,3 +182,13 @@ body {
 #footer-items {
 	margin: 1pt;
 }
+
+#poly {
+	display: inline-block;
+	color:Blue;
+}
+
+#dev{
+	display: inline-block;
+	color:Red;
+}
